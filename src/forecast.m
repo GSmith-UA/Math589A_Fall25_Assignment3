@@ -15,6 +15,6 @@ for h = 1:H
             acc = acc + coef.a(i)*yF(h-i);
         end
     end
-    yF(h) = acc;
+    yF(h) = acc+(coef.d*t);
 end
 end

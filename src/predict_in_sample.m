@@ -11,6 +11,6 @@ for k = 1:M
     for i = 1:N
         acc = acc + coef.a(i)*y(t-i);
     end
-    yhat(k) = acc;
+    yhat(k) = acc+(coef.d*t);
 end
 end

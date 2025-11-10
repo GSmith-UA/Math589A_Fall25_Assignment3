@@ -9,7 +9,7 @@ for N = Ngrid(:).'
     end
     S = score_model(fit.RSS, fit.M, fit.p, criterion);
     if S < best.score
-        best = fit; best.score = S; best.criterion = criterion;
+        best = fit; best.score = S; best.criterion = criterion; 
     end
   end
 end
